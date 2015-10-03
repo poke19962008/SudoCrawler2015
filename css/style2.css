@@ -1,0 +1,71 @@
+
+
+body{
+	background: rgba(230, 234, 227, 1);
+	color: #333333;
+font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+	overflow-x: hidden;
+	padding-bottom: 30px;
+
+}
+
+.container{
+	text-align: center;
+	}
+
+.list{
+	text-align: left;
+	font-size: 19px;
+	line-height: 180%;
+	margin-right: 20px;
+}
+.main{
+	font-size: 30px;
+	
+	background: #2260AC;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	box-shadow: 0 4px 6px 1px rgba(50, 50, 50, 0.2);
+	color: whitesmoke;
+}
+
+.container .grid_1{
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+#ios-arrow-left {
+    left:40px;
+    top:15px;    
+    position:absolute;
+    background-repeat:repeat-x;
+    background-color: rgba(230, 234, 227, 1);/*change this and the background color for the :before element*/
+   	height:30px;
+    padding: 0 10px 0 8px;
+    z-index : 0;
+    border-radius: 6px; 
+    font-size : 11px;
+    display : block; 
+    text-align:center;
+    color:#333;
+    text-shadow : 0px -1px 0px #000;
+    line-height : 30px;
+    font-family : HelveticaNeue;
+    font-weight: 700;
+    -webkit-background-size : 30px;
+}
+
+#ios-arrow-left:before{
+    position:absolute;
+    top:9.9%;
+    left:-5px;
+    -webkit-background-size : 22px 22px;
+    background-position :-2px -1.5px;
+    background-color: rgba(230, 234, 227, 1)/*change to the same as the main element*/
+    height : 25px;
+    width: 25px; 
+    z-index : 1;
+    content : ' ';
+    border-left : 1.5px solid rgba(255,255,255,0.3);
+    
+    
+}

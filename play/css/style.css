@@ -1,0 +1,106 @@
+body{
+  background-color: #fcfcfc;
+}
+
+footer.page-footer{
+  margin-top: 30px;
+  padding-top: 0px;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+main .container {
+  margin-top: 5px;
+  padding-top: 5px;
+}
+
+main .container .row{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+main .container .col{
+  height: 55px;
+}
+
+#ImageLevelRow {
+  margin-bottom: 20px;
+}
+
+#InputRow {
+  margin-top: 35px;
+}
+
+#QuestionHeadingRow span {
+  font-weight: bold;
+  font-size: 30px;
+  color: #444;
+}
+
+#MainHintRow span {
+  color: #444;
+}
+
+#Image {
+  height: 300px;
+  width: 280px;
+  object-fit: contain;
+  display: block;
+  vertical-align: middle;
+  margin: auto;
+}
+
+#ImageDiv {
+  height: 300px;
+}
+
+#LevelDiv {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#IETdiv {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#left_up, #left_down {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#right_up, #right_down {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#left_up, #right_up {
+  margin-bottom: 20px;
+}
+
+#left_down, #right_down {
+  margin-bottom: 20px;
+}
+
+.input-field label {
+ color: #444;
+}
+
+.input-field input[type=text]:focus + label {
+ color: #2196F3;
+}
+
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid #2196F3;
+ box-shadow: 0 1px 0 0 #2196F3;
+}
+
+.input-field input[type=text].valid {
+ border-bottom: 1px solid #2196F3;
+ box-shadow: 0 1px 0 0 #2196F3;
+}
+
+.input-field .prefix.active {
+ color: #2196F3;
+}

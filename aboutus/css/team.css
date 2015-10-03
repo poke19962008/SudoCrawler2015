@@ -1,0 +1,45 @@
+.thumbnail {
+	max-width: 370px;
+	text-align: center;
+}
+.thumbnail span {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.team-member {
+	max-width: 320px;
+	margin: 30px auto;
+	text-align: center;
+}
+.team-member .thumb {
+	width: 100%;
+	max-width: 280px;
+	margin: 0 auto 20px auto;
+}
+.team-member span {
+	display: block;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.team-member p {
+	margin-bottom: 18px;
+}
+
+nav a{
+	font-weight: normal;
+}
+
+footer div, a {
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+footer .container .row div {
+	margin-top: 20px;
+  margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}

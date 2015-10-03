@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Trying...</title>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SudoCrawler: An Intelligent Quest " />
+<meta name="keywords" content="Inquisitive Quest , Intelligent Quest , Quiz , Cryptic Hunt , " />
+<meta name="author" content="Sayan Das" />
+
+<link rel="shortcut icon" href="../img/favico.ico">
+<style type="text/css">
+::-moz-selection { background: #fff; text-shadow: none; }
+::selection { background: #fff; text-shadow: none; }
+body { font-family: menlo; background: #000; color: #C0C0C0; font-size: 12pt; }
+#errormsg { display: none }
+#blink { display: inline; color: #0F0; }
+</style>
+
+</head>
+<body>
+<div id="echoerror"></div>
+<div id="errormsg">
+  SudoCrawler:~ public_html$ Initiating a request to the server<br>
+  SudoCrawler:~ public_html$ The server can not find the file or script you have requested<br>
+  SudoCrawler:~ public_html$ Retrying #1....<br>
+  SudoCrawler:~ public_html$ The server can not find the file or script you have requested #1<br>
+  SudoCrawler:~ public_html$ Failure, 404 file not found.
+</div>
+<script type="text/javascript">
+    var charIndex = -1;
+    var stringLength = 0;
+    var inputText;
+    function writeContent(){
+    	inputText = document.getElementById('errormsg').innerHTML;
+        if(charIndex==-1){
+            charIndex = 0;
+            stringLength = inputText.length;
+        }
+        var initString = document.getElementById('echoerror').innerHTML;
+		initString = initString.replace(/<span.*$/gi,"");
+
+        var theChar = inputText.charAt(charIndex);
+       	var nextFourChars = inputText.substr(charIndex,4);
+        var next27Chars = inputText.substr(charIndex,27);
+		if(nextFourChars=="...."){
+			time = 3000;
+		}else{
+      time = 50;
+    }
+       	if(nextFourChars=='<br>'){
+       		theChar = '<br>';
+       		charIndex+=3;
+       	}else if(next27Chars == " SudoCrawler:~ public_html$"){
+          theChar=" SudoCrawler:~ public_html$";
+          charIndex+=26;
+        }
+        initString = initString + theChar + "<span id='blink'>▌</span>";
+        document.getElementById('echoerror').innerHTML = initString;
+        charIndex = charIndex/1 +1;
+        if(charIndex<=stringLength){
+            setTimeout('writeContent(false)',time);
+        }else{
+			document.title = "404 :(";
+		}
+    }
+	writeContent();
+</script>
+</body>
+</html>
