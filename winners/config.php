@@ -1,7 +1,7 @@
 <?php
-  $user="pseudo";
-  $pass="iet@webarch";
-  $hostname = "localhost";
+  $user="";
+  $pass="";
+  $hostname = "";
 
 function testdb_connect ($hostname, $user, $pass){  
 $db = new PDO("mysql:host=$hostname;dbname=pseudo", $user, $pass);
